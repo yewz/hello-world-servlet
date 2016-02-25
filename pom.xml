@@ -39,11 +39,11 @@
                 <version>0.13.4</version>
 		<configuration>
    			<dockerHost>tcp://192.168.99.100:2376</dockerHost>
-   			<certPath>/Users/shaines/.docker/machine/machines/default</certPath>
+   			<certPath>/Users/sxps16/.docker/machine/machines/default</certPath>
    			<useColor>true</useColor>
   		   <images>
     			<image>
-      				<name>lygado/tomcat-with-my-app:0.1</name>
+      				<name>yewz/tomcat-with-my-app:0.1</name>
       				<alias>service</alias>
 				<build>
 					<from>tomcat</from>
@@ -66,7 +66,7 @@
 				</build>
 				<run>
 					<ports>
-					   <port>8080:8080</port>
+					   <port>8082:8080</port>
 					</ports>
 				</run>
 			</image>
